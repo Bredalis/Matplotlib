@@ -25,8 +25,9 @@ plt.text(
 
 plt.annotate(
 	'Nuevo Texto', (1.3, 2), xytext = (2, 1),
-	arrowprops = dict(arrowstyle = 'simple', facecolor = 'yellow', edgecolor = 'k')
-)
+	arrowprops = dict(arrowstyle = 'simple', 
+	facecolor = 'yellow', edgecolor = 'k'))
 
-plt.legend(loc = 'upper center', shadow = 0, fontsize = 'x-large', facecolor = 'pink')
+plt.legend(loc = 'upper center', shadow = 0, 
+	fontsize = 'x-large', facecolor = 'pink')
 plt.show()

@@ -1,8 +1,8 @@
 
 # Librerias
 
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
 # Datos para graficar
 
@@ -18,8 +18,10 @@ plt.plot(x, y, 'rd-', x_2, y_2, 'ko:')
 
 # Lineas de fondo
 
-plt.grid(axis = 'y', color = 'b', which = 'major', alpha = (0.5), linestyle = '--')
-plt.grid(axis = 'x', color = 'b', which = 'major', alpha = (0.2), linestyle = '--')
+plt.grid(axis = 'y', color = 'b', which = 'major', 
+	alpha = (0.5), linestyle = '--')
+plt.grid(axis = 'x', color = 'b', which = 'major',
+	alpha = (0.2), linestyle = '--')
 
 # Tamaño de los numeros
 

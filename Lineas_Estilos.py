@@ -1,8 +1,8 @@
 
 # Librerias
 
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
 # Grafica
 
@@ -15,7 +15,7 @@ y = np.sin(x)
 
 # Origen
 
-grafica.stem(x, y, linefmt = ('k', ':'), markerfmt = 'D', basefmt = 'C3--')
+grafica.stem(x, y, linefmt='k:', markerfmt='D', basefmt='C3--')
 
 # Colocaciones
 

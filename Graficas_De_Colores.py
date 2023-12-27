@@ -1,8 +1,8 @@
 
 # Librerias
 
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
 # Datos para graficar
 
@@ -21,15 +21,15 @@ def Diagrama_De_Puntos():
 
 	# Grafica circular
 
-	visualizacion = grafica.scatter(colores, matriz, c = colores, s = 100, cmap = 'hsv')
+	visualizacion = grafica.scatter(colores, matriz, 
+		c = colores, s = 100, cmap = 'hsv')
 	plt.colorbar(mappable = visualizacion, location = 'left')
 
 # Mostrar una grafica de colores a partir de la matriz
 
 plt.imshow(
 	matriz, cmap = plt.cm.winter,
-	interpolation = 'bilinear', extent = [1, 10, 1, 10]
-)
+	interpolation = 'bilinear', extent = [1, 10, 1, 10])
 
 Diagrama_De_Puntos()
 

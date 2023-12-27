@@ -1,8 +1,8 @@
 
 # Librerias
 
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
 # Tamaño de la grafica
 
@@ -19,7 +19,6 @@ grafica.plot(
 	x, y, marker = 'D',
 	markerfacecolor = 'pink', markeredgecolor = 'k',
 	fillstyle = 'left', markersize = 20,
-	markerfacecoloralt = 'green'
-)
+	markerfacecoloralt = 'green')
 
 plt.show()

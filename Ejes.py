@@ -1,14 +1,14 @@
 
 # Librerias
 
-import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MultipleLocator, AutoMinorLocator
+import pandas as pd
+import numpy as np
 
 # Creacion de la grafica
 
-fig, grafica = plt.subplots() 
+fig, grafica = plt.subplots()
 
 # Datos para graficar
 
@@ -20,8 +20,8 @@ def Diagrama_De_Barras():
 	fig, grafica = plt.subplots()
 
 	df = pd.DataFrame({
-		"Campos": ['Ingles', 'Matematica', 'Historia', 'Lengua', 'Fisica', 'Biologia'], 
-		"Cantidades": [6, 5, 4, 7, 5, 6]
+		'Campos': ['Ingles', 'Matematica', 'Historia', 'Lengua', 'Fisica', 'Biologia'],
+		'Cantidades': [6, 5, 4, 7, 5, 6]
 
 	})
 
@@ -52,7 +52,8 @@ def Diagrama_De_Barras():
 
 	grafica.tick_params(axis = 'y', which = 'major', labelsize = 14)
 	grafica.tick_params(axis = 'x', which = 'minor', labelsize = 12)
-	grafica.tick_params(axis = 'x', which = 'major', labelsize = 14, labelrotation = 15)
+	grafica.tick_params(axis = 'x', which = 'major', 
+		labelsize = 14, labelrotation = 15)
 
 # Limites Escalares
 
@@ -62,7 +63,8 @@ grafica.set_ylim(0, 100000)
 
 # Divisiones
 
-grafica.set_xticks(np.arange(0, 20, 4), ['Android', 'SQL', 'Linux', 'Window', 'Mac'])
+grafica.set_xticks(np.arange(0, 20, 4), 
+	['Android', 'SQL', 'Linux', 'Window', 'Mac'])
 
 Diagrama_De_Barras()
 
