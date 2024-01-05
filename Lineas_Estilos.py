@@ -15,7 +15,7 @@ y = np.sin(x)
 
 # Origen
 
-grafica.stem(x, y, linefmt='k:', markerfmt='D', basefmt='C3--')
+grafica.stem(x, y, linefmt = 'k:', markerfmt = 'D', basefmt = 'C3--')
 
 # Colocaciones
 

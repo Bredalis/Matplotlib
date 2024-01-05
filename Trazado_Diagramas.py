@@ -18,7 +18,7 @@ print(f'Estilos: {plt.style.available}')
 
 # Estilo de la grafica
 
-plt.style.use('seaborn')
+plt.style.use('seaborn-v0_8-bright')
 
 # Lineas
 
@@ -28,7 +28,7 @@ plt.plot(x_2, y_2, color = 'b', linestyle = 'dotted',
 	marker = 'o', label = 'Linea Azul')
 
 plt.xticks(x)
-plt.tick_params(axis = 'both', width = 'both', top = 1, right = 1)
+plt.tick_params(axis = 'both', width = 1, top = 1, right = 1)
 
 plt.title('Tema')
 plt.xlabel('Etqiueta x')

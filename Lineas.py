@@ -25,6 +25,6 @@ plt.grid(axis = 'x', color = 'b', which = 'major',
 
 # Tamaño de los numeros
 
-plt.tick_params(axis = 'y', which = 'major', labelsize = 10)
+plt.tick_params(axis = 'y', which = 'major', labelsize = 15)
 plt.legend(['Linea Roja', 'Linea Negra'])
 plt.show()

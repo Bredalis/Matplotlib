@@ -15,14 +15,13 @@ fig, grafica = plt.subplots()
 x = np.linspace(0, 20, 200)
 y = x ** 3
 
-def Diagrama_De_Barras():
+def diagrama_de_barras():
 
 	fig, grafica = plt.subplots()
 
 	df = pd.DataFrame({
 		'Campos': ['Ingles', 'Matematica', 'Historia', 'Lengua', 'Fisica', 'Biologia'],
 		'Cantidades': [6, 5, 4, 7, 5, 6]
-
 	})
 
 	# Barras
@@ -66,6 +65,6 @@ grafica.set_ylim(0, 100000)
 grafica.set_xticks(np.arange(0, 20, 4), 
 	['Android', 'SQL', 'Linux', 'Window', 'Mac'])
 
-Diagrama_De_Barras()
+diagrama_de_barras()
 
 plt.show()

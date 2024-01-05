@@ -6,10 +6,10 @@ import numpy as np
 
 # Datos para graficar
 
-x = np.arange(8).reshape(8, 1)
+x = np.arange(8)
 y = [3, 1, 1, 2, 5, 5, 7, 6]
 
-def Diagrama_De_Barras():
+def diagrama_de_barras():
 
 	# Grafica
 
@@ -36,8 +36,8 @@ plt.plot(x, y, c = 'b', linewidth = 5, zorder = 0)
 fig, grafica = plt.subplots()
 
 grafica.plot([1, 2, 3, 4], [1, 2, 4, 3])
-plt.title('Primera grafica')
+plt.title('Primera Grafica')
 
-Diagrama_De_Barras()
+diagrama_de_barras()
 
 plt.show()

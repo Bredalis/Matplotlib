@@ -15,8 +15,8 @@ plt.scatter([1, 2, 3, 4], [4, 3, 2, 1], label = 'Puntos')
 plt.text(
 	x = 2.5, y = 2.5, s = 'Ubicacion de Texto',
 	fontsize = 10, color = 'green',
-	bbox = dict(
 
+	bbox = dict(
 		facecolor = 'pink', edgecolor = '#003430',
 		alpha = 0.8, boxstyle = 'larrow'
 ))
