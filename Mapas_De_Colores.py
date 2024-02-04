@@ -6,7 +6,7 @@ import pandas as pd
 
 # Obtener datos
 
-url = 'C:/Users/Angelica Gerrero/Desktop/LenguajesDeProgramacion/Datasets/CSV/personas.csv'
+url = 'C:/Users/Bradalis/Desktop/LenguajesDeProgramacion/Datasets/CSV/personas.csv'
 personas = pd.read_csv(url)
 print(personas)
 
