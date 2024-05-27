@@ -10,7 +10,7 @@ import numpy as np
 
 fig, grafica = plt.subplots()
 
-# Datos para graficar
+# Datos
 
 x = np.linspace(0, 20, 200)
 y = x ** 3

@@ -4,8 +4,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Dato para graficar
-
 x = np.linspace(0, 2, 100)
 
 # Tamaño de la grafica

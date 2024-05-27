@@ -16,7 +16,7 @@ plt.plot(eje_x, eje_y_1)
 plt.plot(eje_x, eje_y_2)
 plt.show()
 
-# Datos para graficar
+# Datos
 
 años = [
     2011, 2012, 2013, 2014, 2015,
@@ -29,22 +29,16 @@ nivel_3 = np.random.rand(10) * 300 + 200
 nivel_4 = np.random.rand(10) * 400 + 300
 nivel_5 = np.random.rand(10) * 500 + 400
 
-# Grafica lineal
+niveles = [nivel_1, nivel_2, nivel_3, nivel_4, nivel_5]
+colores = ["purple", "pink", "blue", "brown", "black"]
+marcadores = ["<", ">", "*", ".", "+"]
+estilos = ["-", "--", ":", "-.", " "]
 
-plt.plot(años, nivel_1, label = "Nivel 1", 
-    color = "purple", marker = "<", linestyle = "-")
+# Lineal
 
-plt.plot(años, nivel_2, label = "Nivel 2", 
-    color = "pink", marker = ">", linestyle = "--")
-
-plt.plot(años, nivel_3, label = "Nivel 3", 
-    color = "blue", marker = "*", linestyle = ":")
-
-plt.plot(años, nivel_4, label = "Nivel 4", 
-    color = "brown", marker = ".", linestyle = "-.")
-
-plt.plot(años, nivel_5, label = "Nivel 5", 
-    color = "black", marker = "+", linestyle = " ")
+for i in range(1, 6):
+    plt.plot(años, niveles[i - 1], label = f"Nivel {i}", 
+    color = colores[i - 1], marker = marcadores[i - 1], linestyle = estilos[i - 1])
 
 plt.legend()
 plt.title("Examen de Certificacion")
@@ -55,27 +49,22 @@ plt.grid()
 plt.minorticks_on()
 plt.show()
 
-# Barra vertical
+# Vertical
 
 x = np.arange(0, 10)
+numeros = [0.0, 0.2, 0.4, 0.6, 0.8]
 
-plt.bar(x, nivel_5, label = "Nivel 1", width = 1/5)
-plt.bar(x + 0.2, nivel_4, label = "Nivel 2", width = 1/5)
-plt.bar(x + 0.4, nivel_3, label = "Nivel 3", width = 1/5)
-plt.bar(x + 0.6, nivel_2, label = "Nivel 4", width = 1/5)
-plt.bar(x + 0.8, nivel_1, label = "Nivel 5", width = 1/5)
+for i in range(1, 6):
+    plt.bar(x + numeros[i - 1], niveles[i - 1], label = f"Nivel {i}", width = 1 / 5)    
 plt.show()
 
-# Barra horizontal
+# Horizontal
 
-plt.barh(x, nivel_5, label = "Nivel 1", height = 1/5)
-plt.barh(x + 0.2, nivel_4, label = "Nivel 2", height = 1/5)
-plt.barh(x + 0.4, nivel_3, label = "Nivel 3", height = 1/5)
-plt.barh(x + 0.6, nivel_2, label = "Nivel 4", height = 1/5)
-plt.barh(x + 0.8, nivel_1, label = "Nivel 5", height = 1/5)
+for i in range(1, 6):
+    plt.barh(x + numeros[i - 1], niveles[i - 1], label = f"Nivel {i}", height = 1 / 5)    
 plt.show()
 
-# Barra aplicada
+# Aplicada
 
 plt.bar(x, nivel_5, label = "Nivel 1", 
     bottom = nivel_2 + nivel_3 + nivel_4 + nivel_5)
@@ -86,16 +75,13 @@ plt.bar(x, nivel_2, label = "Nivel 4", bottom = nivel_5)
 plt.bar(x, nivel_1, label = "Nivel 5")
 plt.show()
 
-# Barra de dispercion
+# Dispercion
 
-plt.scatter(x, nivel_5, label = "Nivel 1")
-plt.scatter(x, nivel_4, label = "Nivel 2")
-plt.scatter(x, nivel_3, label = "Nivel 3")
-plt.scatter(x, nivel_2, label = "Nivel 4")
-plt.scatter(x, nivel_1, label = "Nivel 5")
+for i in range(1, 6):
+    plt.scatter(x, niveles[i - 1], label = f"Nivel {i}")
 plt.show()
 
-# Barra de pastel
+# Pastel
 
 plt.pie(nivel_1, 
     labels = ["Cereza", "Naranja", "Uva", "Fresa", "Pera", "Limon", 

@@ -8,7 +8,7 @@ import numpy as np
 
 fig, grafica = plt.subplots(figsize = (5, 5))
 
-# Datos para graficar
+# Datos
 
 x = np.arange(6)
 y = x

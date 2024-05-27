@@ -1,9 +1,7 @@
 
-# Libreria
-
 import matplotlib.pyplot as plt
 
-# Datos para graficar
+# Datos
 
 x = range(12)
 x_2 = range(13)

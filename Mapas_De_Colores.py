@@ -9,25 +9,21 @@ import pandas as pd
 personas = pd.read_csv("Personas.csv")
 print(personas)
 
-# Graficas circulares
+def grafica_circular(x, y):
 
-plt.scatter(personas["altura"], personas["peso"])
-plt.xlabel("Altura (cms)")
-plt.ylabel("Peso (kgs)")
-plt.title("Altura y Peso")
-plt.show()
+	plt.scatter(personas[x], personas[y])
 
-plt.scatter(personas["ingreso"], personas["horas_trabajadas"])
-plt.xlabel("Ingreso ($)")
-plt.ylabel("Horas Trabajadas")
-plt.title("Ingreso y Horas")
-plt.show()
+	x = x.capitalize()
+	y = y.capitalize()
 
-plt.scatter(personas["ingreso"], personas["ausencias"])
-plt.xlabel("Ingreso ($)")
-plt.ylabel("Ausencias")
-plt.title("Ingresos y Ausencias")
-plt.show()
+	plt.xlabel(x)
+	plt.ylabel(y)
+	plt.title(f"{x} y {y}")
+	plt.show()
+
+grafica_circular("altura", "peso")
+grafica_circular("ingreso", "horas_trabajadas")
+grafica_circular("ingreso", "ausencias")
 
 # Matriz de correlacion
 

@@ -4,7 +4,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Datos para graficar
+# Datos
 
 x = np.arange(8)
 y = [3, 1, 1, 2, 5, 5, 7, 6]

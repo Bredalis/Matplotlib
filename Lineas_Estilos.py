@@ -4,11 +4,9 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Grafica
-
 fig, grafica = plt.subplots()
 
-# Datos para graficar
+# Datos
 
 x = np.linspace(0.1, 6)
 y = np.sin(x)

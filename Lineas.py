@@ -4,7 +4,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Datos para graficar
+# Datos
 
 x = np.linspace(0, 20, 10)
 y = x ** 2

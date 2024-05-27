@@ -1,6 +1,4 @@
 
-# Libreria
-
 import matplotlib.pyplot as plt
 
 # Lineas
@@ -8,7 +6,7 @@ import matplotlib.pyplot as plt
 plt.plot([1, 2, 3, 4], [1, 2, 3, 4], label = "Linea Azul")
 plt.plot([1, 2, 3, 4], [1, 4, 3, 2], label = "Linea Naranja")
 
-# Circulos
+# Puntos
 
 plt.scatter([1, 2, 3, 4], [4, 3, 2, 1], label = "Puntos")
 

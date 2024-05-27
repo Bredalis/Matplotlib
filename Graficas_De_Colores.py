@@ -10,7 +10,7 @@ def diagrama_de_puntos():
 
 	fig, grafica = plt.subplots(subplot_kw = dict(projection = "polar"))
 
-	# Datos para graficar
+	# Datos
 
 	matriz = np.linspace(0, 2, 20)
 	colores = np.pi * matriz
@@ -23,7 +23,7 @@ def diagrama_de_puntos():
 
 diagrama_de_puntos()
 
-# Datos para graficar
+# Datos
 
 matriz = np.arange(36).reshape(6, 6)
 
