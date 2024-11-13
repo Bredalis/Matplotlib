@@ -1,31 +1,31 @@
 
 import matplotlib.pyplot as plt
 
-# Lineas
-
-plt.plot([1, 2, 3, 4], [1, 2, 3, 4], label = "Linea Azul")
-plt.plot([1, 2, 3, 4], [1, 4, 3, 2], label = "Linea Naranja")
+# Líneas
+plt.plot([1, 2, 3, 4], [1, 2, 3, 4], label = "Línea Azul")
+plt.plot([1, 2, 3, 4], [1, 4, 3, 2], label = "Línea Naranja")
 
 # Puntos
-
 plt.scatter([1, 2, 3, 4], [4, 3, 2, 1], label = "Puntos")
 
+# Texto en ubicación específica
 plt.text(
-	x = 2.5, y = 2.5, s = "Ubicacion de Texto",
-	fontsize = 10, color = "green",
+    x = 2.5, y = 2.5, s = "Ubicación de Texto",
+    fontsize = 10, color = "green",
+    bbox = dict(
+        facecolor = "pink", edgecolor = "#003430",
+        alpha = 0.8, boxstyle = "larrow"
+    )
+)
 
-	bbox = dict(
-		facecolor = "pink", edgecolor = "#003430",
-		alpha = 0.8, boxstyle = "larrow"
-))
-
-# Cubos de mensajes
-
+# Anotación con flecha
 plt.annotate(
-	"Nuevo Texto", (1.3, 2), xytext = (2, 1),
-	arrowprops = dict(arrowstyle = "simple", 
-	facecolor = "yellow", edgecolor = "k"))
+    "Nuevo Texto", xy = (1.3, 2), xytext = (2, 1),
+    arrowprops = dict(arrowstyle = "simple", 
+    	facecolor = "yellow", edgecolor = "k")
+)
 
-plt.legend(loc = "upper center", shadow = 0, 
-	fontsize = "x-large", facecolor = "pink")
+# Leyenda
+plt.legend(loc = "upper center", shadow = False, 
+           fontsize = "x-large", facecolor = "pink")
 plt.show()
