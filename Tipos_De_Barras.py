@@ -12,7 +12,7 @@ plt.plot(eje_x, eje_y_2)
 plt.show()
 
 # Datos para gráficos complejos
-años = list(range(2011, 2021))
+anios = list(range(2011, 2021))
 nivel_1 = np.random.rand(10) * 100
 nivel_2 = np.random.rand(10) * 200 + 100
 nivel_3 = np.random.rand(10) * 300 + 200
@@ -27,7 +27,7 @@ estilos = ["-", "--", ":", "-.", " "]
 # Gráfico de líneas con variación de estilos
 for i in range(5):
     plt.plot(
-        años, niveles[i], label = f"Nivel {i + 1}", 
+        anios, niveles[i], label = f"Nivel {i + 1}", 
         color = colores[i], marker = marcadores[i], linestyle = estilos[i]
     )
 
